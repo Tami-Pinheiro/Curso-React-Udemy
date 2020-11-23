@@ -57,19 +57,52 @@ for(a=0; a < x; a++){
 }
 
 //13.Switch não é laço de repetição
-x = 2;
 
-switch(x){
-    case 0:
-        alert("O x vale 0 !");
-        break;
-    case 1:
-        alert("O x vale 1 !");
-        break;
-    case 2:
-        alert("O x vale 2 !");
-        break;
+function pedir(){
+    x = prompt("O que deseja pedir?")
+
+    switch(x){
+        case "0":
+            alert("Você pediu sorvete!");
+            break;
+        case "1":
+            alert("Você pediu um suco!");
+            break;
+        case "2":
+            alert("Você pediu uma coca cola!");
+            break;
+        case "3":
+            alert("Você pediu água!");
+            break;
+        default:
+            alert("ops não temos essa opção!");
+            break;
+    }
+
 }
 
+//14.Temporizador
 
+// function acao(){
+//     document.write("executando...<br/>");
+    
+// }
+
+//Executa de tempo em tempo!
+//setInterval(acao,1000);
+
+//setTimeout(acao, 3000);
+
+//var timer= setInterval(acao, 3000);
+
+//para parar a variavel é so abrir o console e digitar o comando clearInterval(timer);
+
+//15.WebStorageService
+//Session=Cookies temporarios
+//No JavaScript podemos salvar com: Webstorage(localStorage, sessionStorage)
+
+//16.Aplicando WebStorage
+
+var nome = localStorage.nome;
+console.log(nome);
 
